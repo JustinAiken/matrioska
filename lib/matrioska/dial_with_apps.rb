@@ -57,6 +57,8 @@ module Matrioska
       dial.status
     end
 
+  private
+
     def local(&block)
       @local_runner_block = block
     end
