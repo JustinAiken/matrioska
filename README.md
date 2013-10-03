@@ -17,6 +17,32 @@ runner.map_app 5, AppController
 runner.start
 ```
 
+<<<<<<< HEAD
+=======
+## Using local and remote apps with at the same time with a parallel dial
+```ruby
+# inside your controller
+dial_with_apps ['user/userb'] do |dial|
+  local do |runner|
+    runner.map_app '1' do
+      say 'Gosh you sound stunning today leg a'
+    end
+  end
+
+  remote do |runner|
+    runner.map_app '2' do
+      say 'Gosh you sound stunning today leg b'
+    end
+  end
+end
+end
+```
+
+### Author
+
+Original author: [Luca Pradovera](https://github.com/polysics)
+
+>>>>>>> feature/local_and_remote_apps
 ### Links
 
 * [Adhearsion](http://adhearsion.com)
